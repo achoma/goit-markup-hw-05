@@ -31,7 +31,18 @@
                 ><span class="logo-studio">Studio</span>
               </a>
             </li>
-            <li><a href="index.html"> Studio</a></li>
+
+            <li>
+              <ul class="current">
+                <li>
+                  <a class="current-link" href="index.html">Studio</a>
+                </li>
+                <li class="current-link">
+                  <div></div>
+                </li>
+              </ul>
+            </li>
+
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="">Contacts</a></li>
           </ul>
@@ -48,7 +59,11 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
-          <button class="servis-button" type="button">Order Service</button>
+          <div class="is-hidden" data-modal>
+            <button class="servis-button" type="button" data-modal-open>
+              Order Service
+            </button>
+          </div>
         </div>
       </section>
       <section class="feature-list">
@@ -477,5 +492,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
