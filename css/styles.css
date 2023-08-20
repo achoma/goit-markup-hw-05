@@ -7,6 +7,7 @@
   --ocean: #404bbf;
   --white: #ffffff;
   --green: #31d0aa;
+  --navyblue-modal: #2e2f42;
   --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
   --tr-duration: 250ms;
   --transition: var(--tr-function) var(--tr-duration);
@@ -101,7 +102,7 @@ header {
   gap: 40px;
   padding-right: 40px;
 }
-/*do sprawdzenia */
+
 .current {
   display: flex;
   width: 48px;
@@ -204,13 +205,7 @@ header {
 button:hover {
   cursor: pointer;
 }
-.is-hiddden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
-    skew(40deg, 10deg);
-}
+
 /* studio - sekcja pierwsza */
 h3 {
   color: var(--navy-blue, #2e2f42);
@@ -543,4 +538,41 @@ p {
   line-height: 1.5;
   letter-spacing: 0.32px;
   padding: 40px 32px 164px;
+}
+
+/* okno modalne */
+.is-hiddden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  background: var(--dairy, #fcfcfc);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+.button-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
