@@ -577,17 +577,15 @@ p {
   height: 24px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: var(--navy-blue);
   cursor: pointer;
 }
-.close-icon {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  fill: var(--navy-blue);
-}
-.button-close:hover .button-close:focus {
-  background-color: var(--ocean, #404bbf);
-}
-.close-icon:hover .close-icon:focus {
+
+.button-close:hover,
+.button-close:focus {
+  background-color: var(--ocean);
   fill: var(--white);
+
+  transition: color var(--transition), background-color var(--transition),
+    box-shadow var(--transition);
 }
