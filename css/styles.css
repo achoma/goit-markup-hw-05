@@ -541,7 +541,7 @@ p {
 }
 
 /* okno modalne */
-.is-hiddden {
+.is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
@@ -569,6 +569,7 @@ p {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 .button-close {
+  background-color: var(--cornflower);
   position: absolute;
   top: 24px;
   right: 24px;
@@ -577,4 +578,16 @@ p {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+.close-icon {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  fill: var(--navy-blue);
+}
+.button-close:hover .button-close:focus {
+  background-color: var(--ocean, #404bbf);
+}
+.close-icon:hover .close-icon:focus {
+  fill: var(--white);
 }
