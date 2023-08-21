@@ -553,7 +553,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  background-color: rgba(46, 47, 66, 0.4);
 }
 .modal {
   position: absolute;
@@ -575,4 +576,5 @@ p {
   height: 24px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
