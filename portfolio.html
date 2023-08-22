@@ -20,41 +20,37 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container navi">
-        <nav>
-          <ul class="navi-link navi-left">
-            <li>
-              <a class="navi-logo" href="">
-                <span class="logo-web"> Web</span
-                ><span class="logo-studio">Studio</span>
-              </a>
-            </li>
+    <header class="header">
+      <div class="container header">
+        <nav class="navi">
+          <a class="navi-logo" href="./index.html"
+            >Web<span class="logo-studio">Studio</span></a
+          >
 
+          <ul class="navi-link">
             <li>
-              <a href="index.html"> Studio</a>
+              <a class="link" href="index.html"> Studio</a>
             </li>
-
-            <li>
-              <ul class="current">
-                <li>
-                  <a class="current-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="current-link-portfolio">
-                  <div></div>
-                </li>
-              </ul>
+            <li class="current-portfolio">
+              <a class="current-portfolio current-link" href="portfolio.html"
+                >Portfolio</a
+              >
             </li>
-
-            <li><a href="">Contacts</a></li>
+            <li><a class="link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <nav>
-          <ul class="contacts-links contacts">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+11(000)1111111">+11 (000) 111-11-11</a></li>
+        <div class="contacts">
+          <ul class="contacts-links">
+            <li>
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -281,10 +277,10 @@
       <div class="container logo-footer">
         <ul>
           <li class="footer-item">
-            <a class="link-footer" href="">
-              <span class="logo-web"> WEB</span
-              ><span class="logo-studio-footer">STUDIO</span>
+            <a class="navi-logo" href="">
+              WEB<span class="logo-studio-footer">STUDIO</span>
             </a>
+
             <p class="footer-text">
               Increase the flow of customers and sales for your business with
               digital marketing & growth solutions.
