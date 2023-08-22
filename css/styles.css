@@ -46,6 +46,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 .navi-logo {
@@ -88,6 +89,10 @@ body {
   gap: 40px;
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: -2px;
+}
+.current {
+  position: relative;
 }
 .current ::after {
   display: block;
@@ -100,6 +105,7 @@ body {
   background: var(--ocean, #404bbf);
   background-color: var(--ocean);
 }
+
 .current-link {
   color: var(--ocean, #404bbf);
 }
@@ -509,6 +515,11 @@ p {
   row-gap: 48px;
   margin-bottom: 120px;
 }
+.project {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .project:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 
@@ -525,10 +536,9 @@ p {
 .overlay {
   background: var(--iris, #4d5ae5);
   position: absolute;
-
   translate: 0 110% 0;
   inset: 0;
-  transition: transform var(--transition);
+  transition: translate 250ms;
 }
 .overlay-text {
   color: var(--cloud, #f4f4fd);
